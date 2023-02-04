@@ -36,6 +36,7 @@ body{
 /* Main Header Desinging Start */
 .main-header{
     width: 100%;
+    display: none;
 }
 
 /* Image Side */
@@ -126,7 +127,12 @@ body{
     border-radius: 7px;
     padding: 14px 111px;
     margin-bottom: 13px;
+    transition: 0.4s ease-in-out;
     cursor: pointer;
+}
+.order-btn:hover{
+    background-color: #e49a9b;
+    color: #4C1E1E;
 }
 .payment-gateways{
     padding: 0 39px;
@@ -170,7 +176,8 @@ body{
 .feature{
     text-align: center;
     width: 186px;
-    margin-top: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .feature img{
     width: 55px;
@@ -180,6 +187,7 @@ body{
 /* Skin-Care-Elements Desinging Start */
 .sc-elements{
     margin-top: 20px;
+    display: none;
 }
 .sc-elements .section-heading{
     flex-direction: column;
@@ -351,6 +359,7 @@ body{
     list-style-type: none;
     color: #fff;
     gap: 26px;
+    text-align: center;
 }
 .footer ul li{
     cursor: pointer;
@@ -367,6 +376,11 @@ body{
     top: 33px;
     color: #fff;
     font-size: 14px;
+}
+.contact-details-for-small-devices{
+    color: #fff;
+    text-align: center;
+    display: none !important;
 }
 /* Footer Designing End */
 
@@ -414,5 +428,79 @@ body{
     }
 }
 @media only screen and (max-width: 768px) {
-    
+    .footer-side-2{
+        display: none !important;
+    }
+    .contact-details-for-small-devices{
+        display: block !important;
+    }
+    .about-details .about-description{
+        width: 100% !important;
+        padding: 0 5rem !important;
+    }
+}
+@media only screen and (max-width: 653px) {
+    .logo-area img{
+        width: 265px !important;
+    }
+    .hideOnSmallDevices{
+        display: none !important;
+    }
+    .single-review-card{
+        width: 100% !important;
+    }
+    .single-review-card .client-img {
+        width: 131px !important;
+        margin-bottom: 10px;
+    }
+    .about-details img {
+        width: 131px !important;
+    }
+    .about-details .about-headline {
+        font-size: 18px !important;
+        margin-top: 6px !important;
+    }
+}
+@media only screen and (max-width: 470px) {
+    .about-details .about-description{
+        padding: 0 2rem !important;
+    }
+}
+@media only screen and (max-width: 412px) {
+    .footer-side-1{
+        gap: 25px !important;
+    }
+    .footer ul{
+        font-size: 12px !important;
+        gap: 5px !important;
+    }
+    .footer .social-icons {
+        gap: 22px !important;
+    }
+    .footer .social-icons img{
+        width: 18px !important;
+    }
+    .copyright-text,
+    .contact-details-for-small-devices{
+        font-size: 15px !important;
+    }
+    .about-details .about-headline{
+        font-size: 17px !important;
+        padding: 0 33px !important;
+        text-align: center !important;
+        line-height: 1.7rem !important;
+    }
+    .about-details .about-description{
+        padding: 0 1.5rem !important;
+        font-size: 13px;
+        line-height: 1.5rem;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .logo-area img{
+        width: 234px !important;
+    }
+    .feature {
+        width: 156px !important;
+    }
 }
