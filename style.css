@@ -187,7 +187,6 @@ body{
 /* Skin-Care-Elements Desinging Start */
 .sc-elements{
     margin-top: 20px;
-    display: none;
 }
 .sc-elements .section-heading{
     flex-direction: column;
@@ -216,6 +215,7 @@ body{
     flex-wrap: wrap;
     gap: 78px;
     align-items: flex-start;
+    padding: 0 25px;
 }
 .section-elements .element{
     flex-direction: column;
@@ -390,6 +390,9 @@ body{
     .client-reviews-cards{
         flex-wrap: wrap;
     }
+    .section-elements {
+        gap: 40px !important;
+    }
 }
 
 @media only screen and (max-width: 1080px) {
@@ -405,6 +408,9 @@ body{
 @media only screen and (max-width: 900px) {
     .image-side{
         padding: 0 0 0 0 !important;
+    }
+    .section-heading p:nth-child(3) {
+        width: 78% !important;
     }
 }
 @media only screen and (max-width: 826px) {
@@ -438,6 +444,18 @@ body{
         width: 100% !important;
         padding: 0 5rem !important;
     }
+    .element img {
+        width: 150px !important;
+    }
+    .section-elements .element {
+        margin: 15px 0 !important;
+    }
+    .section-elements {
+        gap: 10px !important;
+    }
+    .element p:nth-child(3) {
+        width: 15rem !important;
+    }
 }
 @media only screen and (max-width: 653px) {
     .logo-area img{
@@ -460,10 +478,46 @@ body{
         font-size: 18px !important;
         margin-top: 6px !important;
     }
+    .section-heading p:nth-child(1) {
+        font-size: 24px;
+    }
+    .section-heading p:nth-child(2) {
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .elementsToBeHidden{
+        display: none !important;
+    }
+    .element img {
+        width: 170px !important;
+        margin-bottom: 10px !important;
+    }
+    .section-elements .element {
+        margin: 15px 0 !important;
+    }
+    .section-elements {
+        gap: 20px !important;
+    }
+    .element p:nth-child(3) {
+        width: 19rem !important;
+    }
 }
 @media only screen and (max-width: 470px) {
     .about-details .about-description{
         padding: 0 2rem !important;
+    }
+    .section-heading p:nth-child(3) {
+        width: 86% !important;
+    }
+    .section-heading p:nth-child(1) {
+        font-size: 22px;
+    }
+    .section-heading p:nth-child(2) {
+        font-size: 14px;
+    }
+    .sc-elements{
+        padding: 0 20px !important;
     }
 }
 @media only screen and (max-width: 412px) {
@@ -502,5 +556,8 @@ body{
     }
     .feature {
         width: 156px !important;
+    }
+    .section-heading p:nth-child(3) {
+        font-size: 13px !important;
     }
 }
